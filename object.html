@@ -1,0 +1,404 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+      let obj=[{userid:"one",name:"vikash",gender:"male"},{userid:"two",name:"Akash",gender:"male"},{userid:"three",name:"ramesh",gender:"male"},{userid:"four",name:"suresh",gender:"male"},{userid:"five",name:"raja",gender:"male"}]
+    //  let [{userid,name,gender}]=obj
+    //  for(let item of obj){
+       
+    //     console.log(item.userid) 
+    //     console.log(item.name)
+    //  }
+    //  for(let i=0;i<obj.length;i++){
+    //     console.log(obj[i].name)
+    //  }
+    //  for (let i in obj){
+    //     console.log(obj[i].userid)
+    //  }
+    //  let i=0;
+    //  while(i<obj.length){
+    //     console.log(obj[i].name)
+    //     i++;
+    //  }
+        
+//   function findtarget(array,target){
+//     for(let i=0;i<array.length;i++){
+//        if(array[i]===target){
+//          return i;
+//        } 
+//   } 
+//    return -1
+// }
+// let myarray=[23,34,12,34,65,26]
+//   let ans=findtarget(myarray,65)
+//   console.log(ans)
+// function expession
+
+ 
+
+//  const iseven=function(num){
+//        return num %2===0;
+//  }
+//  console.log(iseven(24))
+
+// arrow function
+// let isodd=(x)=>{
+//     console.log(x%2 !==0)
+// }
+// isodd(27)
+
+
+// inside function
+// let myfun=()=>{
+//    function add(num1,num2){
+//    return num1+num2;
+//    }
+//    let mul=()=>{
+//     return num3*num4
+//    }
+//    console.log("hello world");
+// }
+// myfun();
+// console.log(add(8,9))
+
+//  lexical Scope
+// {
+//     let newvar="vikash"
+//     console.log(newvar)
+// }
+
+// {
+//     const new1="rahul"
+//     console.log(new1)
+// }
+
+//  {
+//     var new02="arif"
+//  }
+//  console.log(new02)
+
+
+
+//   add numbers
+
+//  function addall(...numbers){
+//     let total = 0;
+//     for (let number of numbers){
+//          total=total+number;
+//     }
+//     return total;
+//  }
+//  let ans=addall(8,9,3,4,5,6,2,1,7,8,98,97,658,87);
+//  let ans1=addall(8,9,23,43,34)
+//  console.log(ans1)
+//  console.log(ans);
+//  let multi=(num1,num2)=>{
+//    return  num1*num2
+
+//  }
+//  let num3=(multi(ans1,ans))
+//  console.log( typeof num3)
+//  let num34=[]
+//  num34.  (num3);
+//  console.log(num34)
+
+// parameter destructure
+// const person={
+//     firstname:"vikash",
+//     gender:"male",
+//     age:27
+// }
+// function persondetails({firstname,gender}){
+//       console.log(firstname);
+//       console.log(gender)
+// }
+// persondetails(person);
+
+//  call back
+// let a="rahul"
+//  function greet(){
+//     console.log("hello world")
+    
+//  }
+//  function callme(){
+//     console.log("my name is vikash")
+//  }
+//  greet(callme())
+// // console.log(greet)
+
+
+// function returning function 
+// function myfun(num,num1){
+   
+//    function hello(){
+//     console.log("hello world")
+//    }
+//    console.log(num+num1)
+//    hello();
+// }
+//  myfun(9,23)
+// Map filter and reduce
+ let arr1=[34,65,23,12,98,10];
+//  let arr5=arr1.map(fun);
+//  function fun(item){
+//     return item +20;
+//  }
+//  console.log(arr5);
+
+//  filter method
+// let arr69=arr1.filter(gt30);
+// function gt30(x){
+//    return x>30;
+// }
+// console.log(arr69) 
+
+
+//   Reduce method
+// let arr2=[56,87,34,23,45,45,12,41];
+
+// let arr72=arr2.reduce(ridu);
+//  function ridu(x,y){
+//     return  x+y
+//  }
+//  console.log(arr72);
+// let users=[
+//     {firstname:"vikash",age:34},
+    
+//        { firstname:"rahul",age:29}
+    
+// ]
+// for(let i in users){
+//     console.log(users[i].firstname)
+   
+// }
+
+
+// users.forEach((user,index)=>{
+//     console.log(user.firstname,ind ex)
+// })
+
+// sort method(for assending order)
+// let arr3=[98,45,23,20,12,56,68];
+// arr3.sort((a,b)=>{
+//     return a-b; 
+// })
+// console.log(arr3);
+// for desending order
+// let arr3=[98,45,23,20,12,56,68];
+// arr3.sort((a,b)=>{
+//     return b-a; 
+// })
+// console.log(arr3);
+// let person=[{userid:"one",username:"vikash",price:1400},{userid:"two",username:"rahul",price:1700},{userid:"three",username:"ramesh",price:800}]
+// person.sort((a,b)=>{
+//   return a.price-b.price;
+// });
+// for(let p of person){
+//     console.log(p.price)
+// }
+// every method
+// let arr3=[98,48,26,20,12,56,68];
+// let arr34=arr3.every((number)=>number%2===0);
+//   console.log(arr34)
+// some method
+// let arr3=[98,48,26,21,12,56,68];
+//  let arr56=arr3.some((num)=>{
+//      return num%2!==0
+// })
+// console.log(arr56)
+// var myvar=null;
+// console.log( typeof myvar)
+  // functions inside function 
+// function app(){
+//     const myFunc = () =>{
+//         console.log("hello from myFunc")
+//     }
+
+//     const addTwo = (num1, num2) =>{
+//         return num1 + num2;
+//     }
+
+//     const mul = (num1, num2) => num1* num2;
+
+//     console.log("inside app");
+//     myFunc();
+//     console.log(addTwo(2,3));
+//     console.log(mul(2,3));
+// }
+// app();
+//    let var24="hello"
+//   function app(){
+//        let var20="mcbc"
+
+//     function myfun(){
+
+//    console.log(var20)
+//         function myfun2(){
+//      console.log(var24)
+//         }
+//         myfun2();
+//     }
+     
+//     console.log("inside my APP")
+//     myfun();
+//   }
+//   app();
+//   let new21=[..."4567898709"];
+//   console.log(new21)
+
+// function addall(...numbers){
+//     let total=0;
+//    for(let number of numbers){
+//       total=total+number;
+//    }
+//    return total;
+   
+
+  
+// }
+// console.log(addall(3,45,67,87,34,34,39,89))
+
+// const users = [
+//     {firstName: "harshit", age: 23},
+//     {firstName: "mohit", age: 21},
+//     {firstName: "nitish", age: 22},
+//     {firstName: "garima", age: 20},
+// ]
+
+// users.forEach(function(user) {
+//     console.log(user.firstName)
+    
+// });
+// for(let user of users){
+//     console.log(user.firstName)
+// }
+
+// users.map((user)=>{
+//     console.log(user.firstName)
+// });
+// function filternew(user){
+//     console.log(user.firstName)
+// // }
+// const users = [
+//     {userId : 1, userName: "harshit"},
+//     {userId : 2, userName: "harsh"},
+//     {userId : 3, userName: "nitish"},
+//     {userId : 4, userName: "mohit"},
+//     {userId : 5, userName: "aaditya"},     
+// ];
+
+// let myuser=users.find((user)=>{
+//    return user.userId===3;
+
+// });
+// console.log(myuser)
+// const userCart = [
+//     {productId: 1, productName: "mobile", price: 12000},
+//     {productId: 2, productName: "laptop", price: 22000},
+//     {productId: 3, productName: "tv", price: 35000},
+// ]
+
+
+// const ans = userCart.some((cartItem)=>cartItem.price < 6000);
+// console.log(ans);
+// let numbers=new Set([7,8,9,9]);
+// console.log(numbers)
+
+// let str="hello world";
+// let neww=[..."aeiou"]
+
+// let str22=str.split("");
+// str22.filter(vowelremover);  
+// function vowelremover(x){
+//     console.log(x) 
+// }
+
+
+// const person={
+//     fName:"vikash",
+//     age:27,
+//     gender:"male",
+//     about:function(){
+//         console.log(`my name is ${this.fName} and my age is ${this.age}`)
+//     }
+    
+
+    
+// }
+// person.about()
+
+
+// const user1={
+//     firstName:"vikash",
+//     age:12,
+//     about:function(){
+//         console.log(this.firstName,this.age)
+//     }
+// }
+// const user2={
+//     firstName:"rahul",
+//     age:32,
+// }
+// user1.about.call(user2);
+
+
+// apply method and call method
+// about:function(){
+//         console.log(this.firstName,this.age)
+//     }
+// const user1={
+//     firstName:"vikash",
+//     age:12,
+    
+// }
+// const user2={
+//     firstName:"rahul",
+//     age:32, 
+
+// } 
+// about.call(user1,"hello");
+// about.apply(user1,["apple","orange"])
+
+
+// function convert(input){
+//    return input*60
+// }
+// console.log(convert(5))
+
+//  function that convert age into days
+//    function age(y){
+//     return y*365 
+//    }
+//    console.log(age(27));
+// age calculator
+// var dob = new Date("08/04/1993");  
+//     //calculate month difference from current date in time  
+//     var month_diff = Date.now() - dob.getTime(); 
+//     console.log(month_diff) 
+//     var age_dt = new Date(month_diff); 
+//   var date=moment();
+// let day=date.getDate();
+// let month=date.getMonth()+1;
+// let year=date.getFullYear();
+//   let currentDate=`${day}-${month}-${year}`;
+//   console.log(currentDate)
+
+//   var today = new Date();
+// var dd = String(today.getDate()).padStart(2, '0');
+// var mm = String(today.getMonth() + 1).padStart(2, '0'); //January is 0!
+// var yyyy = today.getFullYear();
+
+// today = mm + '/' + dd + '/' + yyyy;
+// document.write(today);
+let today=new Date("octuber 12,2020 16:30:20");
+console.log(today.getTime())
+
+    </script>
+</body>
+</html>    

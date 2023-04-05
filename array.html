@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let arr1=[23,56,87,23,12,4,5];
+        let newarr=arr1.map((item)=>{
+            return item+10;
+        })
+        console.log(newarr);
+      let filarr=arr1.filter((i)=>{
+       return i>20;
+      })
+      console.log(filarr);
+      let reduarr=arr1.reduce(myfun)
+     function myfun(total,currentvalue){
+        return total+currentvalue;
+     }
+     console.log(reduarr);
+
+    //  for Each loop 
+   let newarr1= arr1.forEach((item)=>{
+        console.log(item+20)
+    
+    })
+    console.log(newarr1)
+    
+        let arr4=["mango","apple","orange","banana"]
+       arr4.splice(2,2,"hello")
+        console.log(arr4)
+    </script>
+</body>
+</html>
